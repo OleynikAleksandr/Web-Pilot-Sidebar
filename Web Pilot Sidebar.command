@@ -163,8 +163,8 @@ self_check() {
   step "Самопроверка"
   local out passed
   out="$(env -u NODE_TEST_CONTEXT WEBPILOT_SRC="$WEBPILOT" "$NODE" --test test/mock-host.test.mjs test/build.test.mjs 2>&1)"
-  passed="$(printf '%s\n' "$out" | sed -n 's/^# pass //p')"
-  if printf '%s\n' "$out" | grep -q '^# fail 0'; then ok "проверки пройдены: ${passed:-?}"; return 0; fi
+  passed="$(printf '%s\n' "$out" | sed -n -e 's/^# pass //p' -e 's/^ℹ pass //p' | tail -n 1)"
+  if printf '%s\n' "$out" | grep -Eq '^(#|ℹ) fail 0$'; then ok "проверки пройдены: ${passed:-?}"; return 0; fi
   # Собранное расширение с ошибкой не заработает в браузере — дальше не идём.
   fail "самопроверка не прошла:"; printf '%s\n' "$out" | sed -n '/^not ok/,/^  \.\.\./p' | head -n 60
   dialog "Самопроверка не прошла: расширение собрано, но работать в браузере не будет. Подробности — в окне Терминала.${NL}${NL}Частая причина — обновление Project Web Pilot, несовместимое с расширением." "Понятно" >/dev/null
