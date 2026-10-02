@@ -69,7 +69,12 @@ release_mac() {
   spctl --assess --type execute --verbose=2 "$app"
   stage="$(mktemp -d)"; cp -R "$app" "$stage/"; ln -s /Applications "$stage/Applications"
   dmg="$ROOT/dist/release/Web-Pilot-Sidebar-$VERSION-$BUILD_NUMBER.dmg"
-  hdiutil create -volname "Web Pilot Sidebar" -srcfolder "$stage" -ov -format UDZO "$dmg" >/dev/null
+  rm -f "$dmg"
+  if diskutil image create from -h >/dev/null 2>&1; then   # macOS 26+: hdiutil create is deprecated
+    diskutil image create from --format UDZO --volumeName "Web Pilot Sidebar" "$stage" "$dmg" >/dev/null
+  else
+    hdiutil create -volname "Web Pilot Sidebar" -srcfolder "$stage" -format UDZO "$dmg" >/dev/null
+  fi
   rm -rf "$stage"
   echo "Готово: $dmg"
 }
