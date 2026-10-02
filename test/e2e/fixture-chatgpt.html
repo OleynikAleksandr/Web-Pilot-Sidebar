@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT — фикстура</title>
+  <!-- Test fixture only: imitates the DOM contract that Project Web Pilot's
+       chatgpt-dom.mjs relies on (#prompt-textarea, send/stop buttons, message
+       roles, Chat/Work switch). It is not the real chatgpt.com. -->
+  <style>
+    html, body { margin: 0; height: 100%; font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: #0d0d0d; background: #fff; }
+    .app { display: flex; height: 100vh; }
+    nav { width: 250px; flex: none; background: #f9f9f9; border-right: 1px solid #ececec; padding: 14px; box-sizing: border-box; }
+    nav strong { font-size: 16px; } nav p { color: #6b6b6b; font-size: 13px; } nav li { list-style: none; padding: 6px 8px; border-radius: 8px; font-size: 14px; color: #333; } nav li:hover { background: #ececec; }
+    nav ul { padding: 0; margin: 16px 0 0; }
+    main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    .modes { display: flex; justify-content: center; gap: 4px; padding: 10px; }
+    .modes button { border: 1px solid #e5e5e5; background: #fff; border-radius: 99px; padding: 4px 14px; cursor: pointer; }
+    .modes button[data-state=on] { background: #0d0d0d; color: #fff; border-color: #0d0d0d; }
+    .thread { flex: 1; overflow: auto; padding: 24px 16px; }
+    .hello { text-align: center; color: #6b6b6b; margin-top: 18vh; font-size: 22px; }
+    .msg { max-width: 720px; margin: 0 auto 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+    [data-message-author-role=user] { background: #f4f4f4; border-radius: 18px; padding: 10px 14px; margin-left: auto; max-width: 70%; max-height: 220px; overflow: auto; }
+    form { max-width: 760px; width: calc(100% - 32px); margin: 0 auto 22px; border: 1px solid #e5e5e5; border-radius: 26px; padding: 10px 10px 10px 18px; display: flex; gap: 8px; align-items: flex-end; box-shadow: 0 2px 10px rgba(0,0,0,.05); box-sizing: border-box; }
+    #prompt-textarea { flex: 1; min-height: 24px; max-height: 180px; overflow: auto; outline: none; white-space: pre-wrap; }
+    #prompt-textarea:empty::before { content: "Спросите что-нибудь"; color: #8f8f8f; }
+    form button { width: 36px; height: 36px; border-radius: 50%; border: 0; background: #0d0d0d; color: #fff; font-size: 16px; cursor: pointer; flex: none; }
+    form button[disabled] { background: #d7d7d7; cursor: default; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <nav aria-label="История чатов">
+      <strong>ChatGPT</strong>
+      <p>Фикстура для проверки Web Pilot Sidebar</p>
+      <ul><li>Синхронизация названий</li><li>Удалённый интерфейс</li><li>Single active plan</li></ul>
+    </nav>
+    <main>
+      <div class="modes" role="group" aria-label="Composer mode">
+        <button type="button" data-tpp-toggle-value="chatgpt" data-state="on">Chat</button>
+        <button type="button" data-tpp-toggle-value="work" data-state="off">Work</button>
+      </div>
+      <div class="thread" id="thread"><div class="hello">Чем могу помочь?</div></div>
+      <form id="composer" onsubmit="return false">
+        <div id="prompt-textarea" contenteditable="true" role="textbox" aria-label="Сообщение"></div>
+        <button type="button" data-testid="send-button" aria-label="Send prompt" disabled>↑</button>
+      </form>
+    </main>
+  </div>
+  <script>
+    const editor = document.getElementById('prompt-textarea');
+    const form = document.getElementById('composer');
+    const thread = document.getElementById('thread');
+    let send = form.querySelector('[data-testid=send-button]');
+    const work = location.pathname.startsWith('/work');
+    for (const button of document.querySelectorAll('[data-tpp-toggle-value]')) {
+      button.dataset.state = (button.dataset.tppToggleValue === 'work') === work ? 'on' : 'off';
+      button.addEventListener('click', () => {
+        for (const b of document.querySelectorAll('[data-tpp-toggle-value]')) b.dataset.state = b === button ? 'on' : 'off';
+      });
+    }
+    const sync = () => { send.disabled = editor.innerText.trim() === ''; };
+    editor.addEventListener('input', sync);
+    // Like ProseMirror: a paste with clipboard data is handled in one transaction.
+    // ?nopaste imitates an editor that ignores synthetic paste (fallback path).
+    const handlesPaste = !new URLSearchParams(location.search).has('nopaste');
+    editor.addEventListener('paste', event => {
+      const text = event.clipboardData?.getData('text/plain');
+      if (!handlesPaste || text == null) return;
+      event.preventDefault();
+      editor.textContent += text;
+      editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertFromPaste' }));
+    });
+    function sendMessage() {
+      const text = editor.innerText;
+      if (!text.trim()) return;
+      thread.querySelector('.hello')?.remove();
+      const user = document.createElement('div');
+      user.className = 'msg'; user.dataset.messageAuthorRole = 'user'; user.textContent = text;
+      thread.append(user);
+      editor.textContent = '';
+      const stop = document.createElement('button');
+      stop.type = 'button'; stop.dataset.testid = 'stop-button'; stop.setAttribute('aria-label', 'Stop streaming'); stop.textContent = '■';
+      send.replaceWith(stop);
+      if (!/\/c\//.test(location.pathname)) {
+        setTimeout(() => history.pushState({}, '', (work ? '/work' : '') + '/c/' + Math.random().toString(36).slice(2, 14).padEnd(12, 'x')), 400);
+      }
+      setTimeout(() => {
+        const answer = document.createElement('div');
+        answer.className = 'msg'; answer.dataset.messageAuthorRole = 'assistant';
+        const id = /requestId: ([\w-]+)/.exec(text)?.[1];
+        answer.textContent = id ? `Пакет ${id} получен.` : 'Ок.';
+        thread.append(answer);
+        const fresh = document.createElement('button');
+        fresh.type = 'button'; fresh.dataset.testid = 'send-button'; fresh.setAttribute('aria-label', 'Send prompt'); fresh.textContent = '↑'; fresh.disabled = true;
+        fresh.addEventListener('click', sendMessage);
+        stop.replaceWith(fresh); send = fresh;
+      }, 3000);
+    }
+    send.addEventListener('click', sendMessage);
+  </script>
+</body>
+</html>

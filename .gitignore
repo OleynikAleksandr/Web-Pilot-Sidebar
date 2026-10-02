@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+mock-host/.data/
+test/e2e/output/
+.DS_Store
+tools/
+xcuserdata/

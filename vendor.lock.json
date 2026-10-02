@@ -1,0 +1,10 @@
+{
+  "source": "Project Web Pilot",
+  "repository": "https://github.com/OleynikAleksandr/Project-Web-Pilot",
+  "commit": "0d2a026298d42cd2063f36f242885fe032f5e910",
+  "files": {
+    "src/chatgpt-dom.mjs": "e238b28fc69154e98a7a01fcec349f312a2f1c16afada322c2ed9481d0a85a88",
+    "src/chatgpt-composer.mjs": "aa790c868fbd8bb5e9173d36848e74dc994840db3676c5ab5b92eb09b37c63b0",
+    "src/chatgpt-experience.mjs": "a3dcb55690c459c83a0a9fbc1ec336141d460ff47ecc70bf77af0a76f9ed868b"
+  }
+}

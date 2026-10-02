@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3418D2A9306FA40500E17611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D2A8306FA40500E17611 /* AppDelegate.swift */; };
+		3418D2AB306FA40500E17611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D2AA306FA40500E17611 /* SceneDelegate.swift */; };
+		3418D2AE306FA40500E17611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2AC306FA40500E17611 /* LaunchScreen.storyboard */; };
+		3418D2B1306FA40500E17611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2AF306FA40500E17611 /* Main.storyboard */; };
+		3418D2BA306FA40600E17611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D2B9306FA40600E17611 /* AppDelegate.swift */; };
+		3418D2BD306FA40600E17611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2BB306FA40600E17611 /* Main.storyboard */; };
+		3418D2C4306FA40600E17611 /* Web Pilot Sidebar Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3418D2C3306FA40600E17611 /* Web Pilot Sidebar Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3418D2CE306FA40600E17611 /* Web Pilot Sidebar Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3418D2CD306FA40600E17611 /* Web Pilot Sidebar Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3418D2D3306FA40600E17611 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D298306FA40500E17611 /* Main.html */; };
+		3418D2D4306FA40600E17611 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D298306FA40500E17611 /* Main.html */; };
+		3418D2D5306FA40600E17611 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29A306FA40500E17611 /* Icon.png */; };
+		3418D2D6306FA40600E17611 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29A306FA40500E17611 /* Icon.png */; };
+		3418D2D7306FA40600E17611 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29B306FA40500E17611 /* Style.css */; };
+		3418D2D8306FA40600E17611 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29B306FA40500E17611 /* Style.css */; };
+		3418D2D9306FA40600E17611 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29C306FA40500E17611 /* Script.js */; };
+		3418D2DA306FA40600E17611 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29C306FA40500E17611 /* Script.js */; };
+		3418D2DB306FA40600E17611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D29D306FA40500E17611 /* ViewController.swift */; };
+		3418D2DC306FA40600E17611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D29D306FA40500E17611 /* ViewController.swift */; };
+		3418D2DD306FA40600E17611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29E306FA40500E17611 /* Assets.xcassets */; };
+		3418D2DE306FA40600E17611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3418D29E306FA40500E17611 /* Assets.xcassets */; };
+		3418D2DF306FA40600E17611 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D2A0306FA40500E17611 /* SafariWebExtensionHandler.swift */; };
+		3418D2E0306FA40600E17611 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418D2A0306FA40500E17611 /* SafariWebExtensionHandler.swift */; };
+		3418D2FC306FA40600E17611 /* panel-ui.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F2306FA40600E17611 /* panel-ui.js */; };
+		3418D2FD306FA40600E17611 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F3306FA40600E17611 /* background.js */; };
+		3418D2FE306FA40600E17611 /* panel-host.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F4306FA40600E17611 /* panel-host.js */; };
+		3418D2FF306FA40600E17611 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F5306FA40600E17611 /* icons */; };
+		3418D300306FA40600E17611 /* panel.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F6306FA40600E17611 /* panel.html */; };
+		3418D301306FA40600E17611 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F7306FA40600E17611 /* manifest.json */; };
+		3418D302306FA40600E17611 /* webpilot-adapter.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F8306FA40600E17611 /* webpilot-adapter.js */; };
+		3418D303306FA40600E17611 /* build-config.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F9306FA40600E17611 /* build-config.js */; };
+		3418D304306FA40600E17611 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2FA306FA40600E17611 /* content.js */; };
+		3418D305306FA40600E17611 /* sidepanel.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2FB306FA40600E17611 /* sidepanel.html */; };
+		3418D306306FA40600E17611 /* panel-ui.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F2306FA40600E17611 /* panel-ui.js */; };
+		3418D307306FA40600E17611 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F3306FA40600E17611 /* background.js */; };
+		3418D308306FA40600E17611 /* panel-host.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F4306FA40600E17611 /* panel-host.js */; };
+		3418D309306FA40600E17611 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F5306FA40600E17611 /* icons */; };
+		3418D30A306FA40600E17611 /* panel.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F6306FA40600E17611 /* panel.html */; };
+		3418D30B306FA40600E17611 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F7306FA40600E17611 /* manifest.json */; };
+		3418D30C306FA40600E17611 /* webpilot-adapter.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F8306FA40600E17611 /* webpilot-adapter.js */; };
+		3418D30D306FA40600E17611 /* build-config.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2F9306FA40600E17611 /* build-config.js */; };
+		3418D30E306FA40600E17611 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2FA306FA40600E17611 /* content.js */; };
+		3418D30F306FA40600E17611 /* sidepanel.html in Resources */ = {isa = PBXBuildFile; fileRef = 3418D2FB306FA40600E17611 /* sidepanel.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3418D2C5306FA40600E17611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3418D292306FA40500E17611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3418D2C2306FA40600E17611;
+			remoteInfo = "Web Pilot Sidebar Extension (iOS)";
+		};
+		3418D2CF306FA40600E17611 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3418D292306FA40500E17611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3418D2CC306FA40600E17611;
+			remoteInfo = "Web Pilot Sidebar Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3418D2E6306FA40600E17611 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				3418D2C4306FA40600E17611 /* Web Pilot Sidebar Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		3418D2ED306FA40600E17611 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				3418D2CE306FA40600E17611 /* Web Pilot Sidebar Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3418D299306FA40500E17611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		3418D29A306FA40500E17611 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3418D29B306FA40500E17611 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		3418D29C306FA40500E17611 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		3418D29D306FA40500E17611 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3418D29E306FA40500E17611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3418D2A0306FA40500E17611 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		3418D2A5306FA40500E17611 /* Web Pilot Sidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Pilot Sidebar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3418D2A8306FA40500E17611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3418D2AA306FA40500E17611 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3418D2AD306FA40500E17611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3418D2B0306FA40500E17611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3418D2B2306FA40500E17611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3418D2B7306FA40600E17611 /* Web Pilot Sidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Pilot Sidebar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3418D2B9306FA40600E17611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3418D2BC306FA40600E17611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3418D2BE306FA40600E17611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3418D2C3306FA40600E17611 /* Web Pilot Sidebar Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Web Pilot Sidebar Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3418D2C8306FA40600E17611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3418D2CD306FA40600E17611 /* Web Pilot Sidebar Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Web Pilot Sidebar Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3418D2D2306FA40600E17611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3418D2F2306FA40600E17611 /* panel-ui.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "panel-ui.js"; path = "../../dist/release/safari/panel-ui.js"; sourceTree = "<group>"; };
+		3418D2F3306FA40600E17611 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../dist/release/safari/background.js; sourceTree = "<group>"; };
+		3418D2F4306FA40600E17611 /* panel-host.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "panel-host.js"; path = "../../dist/release/safari/panel-host.js"; sourceTree = "<group>"; };
+		3418D2F5306FA40600E17611 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../dist/release/safari/icons; sourceTree = "<group>"; };
+		3418D2F6306FA40600E17611 /* panel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = panel.html; path = ../../dist/release/safari/panel.html; sourceTree = "<group>"; };
+		3418D2F7306FA40600E17611 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/release/safari/manifest.json; sourceTree = "<group>"; };
+		3418D2F8306FA40600E17611 /* webpilot-adapter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "webpilot-adapter.js"; path = "../../dist/release/safari/webpilot-adapter.js"; sourceTree = "<group>"; };
+		3418D2F9306FA40600E17611 /* build-config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "build-config.js"; path = "../../dist/release/safari/build-config.js"; sourceTree = "<group>"; };
+		3418D2FA306FA40600E17611 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../dist/release/safari/content.js; sourceTree = "<group>"; };
+		3418D2FB306FA40600E17611 /* sidepanel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = sidepanel.html; path = ../../dist/release/safari/sidepanel.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3418D2A2306FA40500E17611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		3418D2B4306FA40600E17611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		3418D2C0306FA40600E17611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		3418D2CA306FA40600E17611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3418D291306FA40500E17611 = {
+			isa = PBXGroup;
+			children = (
+				3418D296306FA40500E17611 /* Shared (App) */,
+				3418D29F306FA40500E17611 /* Shared (Extension) */,
+				3418D2A7306FA40500E17611 /* iOS (App) */,
+				3418D2B8306FA40600E17611 /* macOS (App) */,
+				3418D2C7306FA40600E17611 /* iOS (Extension) */,
+				3418D2D1306FA40600E17611 /* macOS (Extension) */,
+				3418D2A6306FA40500E17611 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3418D296306FA40500E17611 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D29D306FA40500E17611 /* ViewController.swift */,
+				3418D29E306FA40500E17611 /* Assets.xcassets */,
+				3418D297306FA40500E17611 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		3418D297306FA40500E17611 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3418D298306FA40500E17611 /* Main.html */,
+				3418D29A306FA40500E17611 /* Icon.png */,
+				3418D29B306FA40500E17611 /* Style.css */,
+				3418D29C306FA40500E17611 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3418D29F306FA40500E17611 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2F1306FA40600E17611 /* Resources */,
+				3418D2A0306FA40500E17611 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		3418D2A6306FA40500E17611 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2A5306FA40500E17611 /* Web Pilot Sidebar.app */,
+				3418D2B7306FA40600E17611 /* Web Pilot Sidebar.app */,
+				3418D2C3306FA40600E17611 /* Web Pilot Sidebar Extension.appex */,
+				3418D2CD306FA40600E17611 /* Web Pilot Sidebar Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3418D2A7306FA40500E17611 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2A8306FA40500E17611 /* AppDelegate.swift */,
+				3418D2AA306FA40500E17611 /* SceneDelegate.swift */,
+				3418D2AC306FA40500E17611 /* LaunchScreen.storyboard */,
+				3418D2AF306FA40500E17611 /* Main.storyboard */,
+				3418D2B2306FA40500E17611 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		3418D2B8306FA40600E17611 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2B9306FA40600E17611 /* AppDelegate.swift */,
+				3418D2BB306FA40600E17611 /* Main.storyboard */,
+				3418D2BE306FA40600E17611 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		3418D2C7306FA40600E17611 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2C8306FA40600E17611 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		3418D2D1306FA40600E17611 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2D2306FA40600E17611 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		3418D2F1306FA40600E17611 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3418D2F2306FA40600E17611 /* panel-ui.js */,
+				3418D2F3306FA40600E17611 /* background.js */,
+				3418D2F4306FA40600E17611 /* panel-host.js */,
+				3418D2F5306FA40600E17611 /* icons */,
+				3418D2F6306FA40600E17611 /* panel.html */,
+				3418D2F7306FA40600E17611 /* manifest.json */,
+				3418D2F8306FA40600E17611 /* webpilot-adapter.js */,
+				3418D2F9306FA40600E17611 /* build-config.js */,
+				3418D2FA306FA40600E17611 /* content.js */,
+				3418D2FB306FA40600E17611 /* sidepanel.html */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3418D2A4306FA40500E17611 /* Web Pilot Sidebar (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3418D2E7306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar (iOS)" */;
+			buildPhases = (
+				3418D2A1306FA40500E17611 /* Sources */,
+				3418D2A2306FA40500E17611 /* Frameworks */,
+				3418D2A3306FA40500E17611 /* Resources */,
+				3418D2E6306FA40600E17611 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3418D2C6306FA40600E17611 /* PBXTargetDependency */,
+			);
+			name = "Web Pilot Sidebar (iOS)";
+			productName = "Web Pilot Sidebar (iOS)";
+			productReference = 3418D2A5306FA40500E17611 /* Web Pilot Sidebar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3418D2B6306FA40600E17611 /* Web Pilot Sidebar (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3418D2EE306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar (macOS)" */;
+			buildPhases = (
+				3418D2B3306FA40600E17611 /* Sources */,
+				3418D2B4306FA40600E17611 /* Frameworks */,
+				3418D2B5306FA40600E17611 /* Resources */,
+				3418D2ED306FA40600E17611 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3418D2D0306FA40600E17611 /* PBXTargetDependency */,
+			);
+			name = "Web Pilot Sidebar (macOS)";
+			productName = "Web Pilot Sidebar (macOS)";
+			productReference = 3418D2B7306FA40600E17611 /* Web Pilot Sidebar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3418D2C2306FA40600E17611 /* Web Pilot Sidebar Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3418D2E3306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */;
+			buildPhases = (
+				3418D2BF306FA40600E17611 /* Sources */,
+				3418D2C0306FA40600E17611 /* Frameworks */,
+				3418D2C1306FA40600E17611 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Web Pilot Sidebar Extension (iOS)";
+			productName = "Web Pilot Sidebar Extension (iOS)";
+			productReference = 3418D2C3306FA40600E17611 /* Web Pilot Sidebar Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3418D2CC306FA40600E17611 /* Web Pilot Sidebar Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3418D2EA306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */;
+			buildPhases = (
+				3418D2C9306FA40600E17611 /* Sources */,
+				3418D2CA306FA40600E17611 /* Frameworks */,
+				3418D2CB306FA40600E17611 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Web Pilot Sidebar Extension (macOS)";
+			productName = "Web Pilot Sidebar Extension (macOS)";
+			productReference = 3418D2CD306FA40600E17611 /* Web Pilot Sidebar Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3418D292306FA40500E17611 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					3418D2A4306FA40500E17611 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					3418D2B6306FA40600E17611 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					3418D2C2306FA40600E17611 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					3418D2CC306FA40600E17611 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 3418D295306FA40500E17611 /* Build configuration list for PBXProject "Web Pilot Sidebar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3418D291306FA40500E17611;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3418D2A6306FA40500E17611 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3418D2A4306FA40500E17611 /* Web Pilot Sidebar (iOS) */,
+				3418D2B6306FA40600E17611 /* Web Pilot Sidebar (macOS) */,
+				3418D2C2306FA40600E17611 /* Web Pilot Sidebar Extension (iOS) */,
+				3418D2CC306FA40600E17611 /* Web Pilot Sidebar Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3418D2A3306FA40500E17611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3418D2D5306FA40600E17611 /* Icon.png in Resources */,
+				3418D2AE306FA40500E17611 /* LaunchScreen.storyboard in Resources */,
+				3418D2D3306FA40600E17611 /* Main.html in Resources */,
+				3418D2D9306FA40600E17611 /* Script.js in Resources */,
+				3418D2DD306FA40600E17611 /* Assets.xcassets in Resources */,
+				3418D2B1306FA40500E17611 /* Main.storyboard in Resources */,
+				3418D2D7306FA40600E17611 /* Style.css in Resources */,
+			);
+		};
+		3418D2B5306FA40600E17611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3418D2D6306FA40600E17611 /* Icon.png in Resources */,
+				3418D2D8306FA40600E17611 /* Style.css in Resources */,
+				3418D2BD306FA40600E17611 /* Main.storyboard in Resources */,
+				3418D2DA306FA40600E17611 /* Script.js in Resources */,
+				3418D2DE306FA40600E17611 /* Assets.xcassets in Resources */,
+				3418D2D4306FA40600E17611 /* Main.html in Resources */,
+			);
+		};
+		3418D2C1306FA40600E17611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3418D30A306FA40600E17611 /* panel.html in Resources */,
+				3418D307306FA40600E17611 /* background.js in Resources */,
+				3418D309306FA40600E17611 /* icons in Resources */,
+				3418D308306FA40600E17611 /* panel-host.js in Resources */,
+				3418D30B306FA40600E17611 /* manifest.json in Resources */,
+				3418D30D306FA40600E17611 /* build-config.js in Resources */,
+				3418D30E306FA40600E17611 /* content.js in Resources */,
+				3418D306306FA40600E17611 /* panel-ui.js in Resources */,
+				3418D30F306FA40600E17611 /* sidepanel.html in Resources */,
+				3418D30C306FA40600E17611 /* webpilot-adapter.js in Resources */,
+			);
+		};
+		3418D2CB306FA40600E17611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				3418D300306FA40600E17611 /* panel.html in Resources */,
+				3418D2FD306FA40600E17611 /* background.js in Resources */,
+				3418D2FF306FA40600E17611 /* icons in Resources */,
+				3418D2FE306FA40600E17611 /* panel-host.js in Resources */,
+				3418D301306FA40600E17611 /* manifest.json in Resources */,
+				3418D303306FA40600E17611 /* build-config.js in Resources */,
+				3418D304306FA40600E17611 /* content.js in Resources */,
+				3418D2FC306FA40600E17611 /* panel-ui.js in Resources */,
+				3418D305306FA40600E17611 /* sidepanel.html in Resources */,
+				3418D302306FA40600E17611 /* webpilot-adapter.js in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3418D2A1306FA40500E17611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3418D2DB306FA40600E17611 /* ViewController.swift in Sources */,
+				3418D2A9306FA40500E17611 /* AppDelegate.swift in Sources */,
+				3418D2AB306FA40500E17611 /* SceneDelegate.swift in Sources */,
+			);
+		};
+		3418D2B3306FA40600E17611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3418D2DC306FA40600E17611 /* ViewController.swift in Sources */,
+				3418D2BA306FA40600E17611 /* AppDelegate.swift in Sources */,
+			);
+		};
+		3418D2BF306FA40600E17611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3418D2DF306FA40600E17611 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+		3418D2C9306FA40600E17611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				3418D2E0306FA40600E17611 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3418D2C6306FA40600E17611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3418D2C2306FA40600E17611 /* Web Pilot Sidebar Extension (iOS) */;
+			targetProxy = 3418D2C5306FA40600E17611 /* PBXContainerItemProxy */;
+		};
+		3418D2D0306FA40600E17611 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3418D2CC306FA40600E17611 /* Web Pilot Sidebar Extension (macOS) */;
+			targetProxy = 3418D2CF306FA40600E17611 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3418D298306FA40500E17611 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3418D299306FA40500E17611 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		3418D2AC306FA40500E17611 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3418D2AD306FA40500E17611 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3418D2AF306FA40500E17611 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3418D2B0306FA40500E17611 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3418D2BB306FA40600E17611 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3418D2BC306FA40600E17611 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3418D2E1306FA40600E17611 /* Debug configuration for PBXProject "Web Pilot Sidebar" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				DEVELOPMENT_TEAM = LXY7H5ZUE9;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3418D2E2306FA40600E17611 /* Release configuration for PBXProject "Web Pilot Sidebar" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				DEVELOPMENT_TEAM = LXY7H5ZUE9;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3418D2E4306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar.Extension;
+				PRODUCT_NAME = "Web Pilot Sidebar Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3418D2E5306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar.Extension;
+				PRODUCT_NAME = "Web Pilot Sidebar Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3418D2E8306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar;
+				PRODUCT_NAME = "Web Pilot Sidebar";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3418D2E9306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar (iOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar;
+				PRODUCT_NAME = "Web Pilot Sidebar";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3418D2EB306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar.Extension;
+				PRODUCT_NAME = "Web Pilot Sidebar Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3418D2EC306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar.Extension;
+				PRODUCT_NAME = "Web Pilot Sidebar Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3418D2EF306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar;
+				PRODUCT_NAME = "Web Pilot Sidebar";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3418D2F0306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar (macOS)" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Web Pilot Sidebar";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oleynik.WebPilotSidebar;
+				PRODUCT_NAME = "Web Pilot Sidebar";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3418D295306FA40500E17611 /* Build configuration list for PBXProject "Web Pilot Sidebar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3418D2E1306FA40600E17611 /* Debug configuration for PBXProject "Web Pilot Sidebar" */,
+				3418D2E2306FA40600E17611 /* Release configuration for PBXProject "Web Pilot Sidebar" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3418D2E3306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3418D2E4306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */,
+				3418D2E5306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar Extension (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3418D2E7306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3418D2E8306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar (iOS)" */,
+				3418D2E9306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar (iOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3418D2EA306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3418D2EB306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */,
+				3418D2EC306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar Extension (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		3418D2EE306FA40600E17611 /* Build configuration list for PBXNativeTarget "Web Pilot Sidebar (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3418D2EF306FA40600E17611 /* Debug configuration for PBXNativeTarget "Web Pilot Sidebar (macOS)" */,
+				3418D2F0306FA40600E17611 /* Release configuration for PBXNativeTarget "Web Pilot Sidebar (macOS)" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3418D292306FA40500E17611 /* Project object */;
+	validationLevel = 1;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "web-pilot-sidebar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Боковая панель Project Web Pilot на странице ChatGPT — расширение браузера.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:release": "node scripts/build.mjs --release",
+    "build:test": "node scripts/build.mjs --target chrome-test",
+    "host": "node mock-host/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "e2e": "node test/e2e/run.mjs",
+    "package:chrome": "node scripts/build.mjs --release --target chrome && cd dist/release/chrome && rm -f ../web-pilot-sidebar-chrome-$npm_package_version.zip && zip -qrX ../web-pilot-sidebar-chrome-$npm_package_version.zip .",
+    "release:mac": "bash scripts/release-apple.sh mac",
+    "release:ios": "bash scripts/release-apple.sh ios"
+  }
+}
