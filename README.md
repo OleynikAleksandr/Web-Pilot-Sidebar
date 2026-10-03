@@ -8,7 +8,7 @@
 
 ## Версии и связь с Web Pilot — 03.10.2026
 
-Собственная версия расширения — **0.1.0**. Текущий локальный macOS Project Web Pilot — **0.6.80** (Electron 44.5.1, Node 24.21.0, Workflow Kit 1.5.1); последняя опубликованная парная macOS/Windows поставка — [0.6.78](https://github.com/OleynikAleksandr/Project-Web-Pilot/releases/tag/v0.6.78). Локальная 0.6.80 исправляет подпись/сохранение ScreenCapture: MCP-захват проверен после обновления и перезагрузки, пользователь подтвердил отсутствие новых запросов. [README хоста](https://github.com/OleynikAleksandr/Project-Web-Pilot/blob/main/README.md), [контракт исправления](https://github.com/OleynikAleksandr/Project-Web-Pilot/blob/main/docs/planning/macos-screen-permission-stability.md).
+Собственная версия расширения — **0.1.0**. Текущий Project Web Pilot — **0.6.80** (Electron 44.5.1, Node 24.21.0, Workflow Kit 1.5.1); парная macOS/Windows поставка опубликована в [GitHub Release v0.6.80](https://github.com/OleynikAleksandr/Project-Web-Pilot/releases/tag/v0.6.80). macOS 0.6.80 исправляет подпись/сохранение ScreenCapture: MCP-захват проверен после обновления и перезагрузки, пользователь подтвердил отсутствие новых запросов; Windows x64 0.6.80 собран и проверен `verify:win` на Mac, native Windows отдельно не проверен. [README хоста](https://github.com/OleynikAleksandr/Project-Web-Pilot/blob/main/README.md), [контракт исправления](https://github.com/OleynikAleksandr/Project-Web-Pilot/blob/main/docs/planning/macos-screen-permission-stability.md).
 
 Production Host API в Web Pilot 0.6.80 ещё не реализован: этап 0 расширения по-прежнему использует тестовый хост. Проекты, сессии, current plan и recovery остаются ответственностью Web Pilot и Workflow Kit.
 
